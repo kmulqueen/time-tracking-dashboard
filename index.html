@@ -39,19 +39,31 @@
             Jeremy Robson
           </h1>
         </div>
-        <div
-          class="report-info__filter"
-          role="group"
-          aria-labelledby="time-filter-heading"
-        >
-          <h2 id="time-filter-heading" class="visually-hidden">
-            Time period filter
-          </h2>
-          <div class="report-info__filter__list">
-            <button class="filter-item" aria-pressed="false">Daily</button>
-            <button class="filter-item" aria-pressed="true">Weekly</button>
-            <button class="filter-item" aria-pressed="false">Monthly</button>
-          </div>
+        <div class="report-info__filter">
+          <fieldset class="time-filter">
+            <legend class="visually-hidden">Time period</legend>
+            <div class="time-filter__options">
+              <input type="radio" id="daily" name="timeFilter" value="daily" />
+              <label for="daily" class="time-filter__label">Daily</label>
+
+              <input
+                type="radio"
+                id="weekly"
+                name="timeFilter"
+                value="weekly"
+                checked
+              />
+              <label for="weekly" class="time-filter__label">Weekly</label>
+
+              <input
+                type="radio"
+                id="monthly"
+                name="timeFilter"
+                value="monthly"
+              />
+              <label for="monthly" class="time-filter__label">Monthly</label>
+            </div>
+          </fieldset>
         </div>
       </section>
 
