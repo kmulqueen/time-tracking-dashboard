@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Time tracking dashboard for activity monitoring"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Time tracking dashboard</title>
+  </head>
+  <body>
+    <main id="main-content">
+      <section class="report-info">
+        <div class="report-info__user">
+          <img
+            src="./images/image-jeremy.png"
+            alt="Photo of Jeremy Robson smiling"
+            class="report-info__user__image"
+          />
+          <h1 class="report-info__user__heading">
+            <span class="report-info__text">Report for</span>
+            Jeremy Robson
+          </h1>
+        </div>
+        <div
+          class="report-info__filter"
+          role="group"
+          aria-labelledby="time-filter-heading"
+        >
+          <h2 id="time-filter-heading" class="visually-hidden">
+            Time period filter
+          </h2>
+          <div class="report-info__filter__list">
+            <button class="filter-item" aria-pressed="false">Daily</button>
+            <button class="filter-item" aria-pressed="true">Weekly</button>
+            <button class="filter-item" aria-pressed="false">Monthly</button>
+          </div>
+        </div>
+      </section>
+
+      <h2 id="activities-heading" class="visually-hidden">Activity tracking</h2>
+      <div class="activities-grid" aria-labelledby="activities-heading">
+        <section class="card card--work">
+          <div class="card-type">
+            <h3 class="card-type__heading">Work</h3>
+            <button
+              class="card-button"
+              aria-label="More options for Work tracking"
+            ></button>
+          </div>
+          <div class="card-summary">
+            <p class="card-summary__time">
+              <span class="visually-hidden">Current:</span> 5hrs
+            </p>
+            <p class="card-summary__comparison">Last Week - 7hrs</p>
+          </div>
+        </section>
+        <section class="card card--play">
+          <div class="card-type">
+            <h3 class="card-type__heading">Play</h3>
+            <button
+              class="card-button"
+              aria-label="More options for Play tracking"
+            ></button>
+          </div>
+          <div class="card-summary">
+            <p class="card-summary__time">
+              <span class="visually-hidden">Current:</span> 5hrs
+            </p>
+            <p class="card-summary__comparison">Last Week - 7hrs</p>
+          </div>
+        </section>
+        <section class="card card--study">
+          <div class="card-type">
+            <h3 class="card-type__heading">Study</h3>
+            <button
+              class="card-button"
+              aria-label="More options for Study tracking"
+            ></button>
+          </div>
+          <div class="card-summary">
+            <p class="card-summary__time">
+              <span class="visually-hidden">Current:</span> 5hrs
+            </p>
+            <p class="card-summary__comparison">Last Week - 7hrs</p>
+          </div>
+        </section>
+        <section class="card card--exercise">
+          <div class="card-type">
+            <h3 class="card-type__heading">Exercise</h3>
+            <button
+              class="card-button"
+              aria-label="More options for Exercise tracking"
+            ></button>
+          </div>
+          <div class="card-summary">
+            <p class="card-summary__time">
+              <span class="visually-hidden">Current:</span> 5hrs
+            </p>
+            <p class="card-summary__comparison">Last Week - 7hrs</p>
+          </div>
+        </section>
+        <section class="card card--social">
+          <div class="card-type">
+            <h3 class="card-type__heading">Social</h3>
+            <button
+              class="card-button"
+              aria-label="More options for Social tracking"
+            ></button>
+          </div>
+          <div class="card-summary">
+            <p class="card-summary__time">
+              <span class="visually-hidden">Current:</span> 5hrs
+            </p>
+            <p class="card-summary__comparison">Last Week - 7hrs</p>
+          </div>
+        </section>
+        <section class="card card--self-care">
+          <div class="card-type">
+            <h3 class="card-type__heading">Self Care</h3>
+            <button
+              class="card-button"
+              aria-label="More options for Self Care tracking"
+            ></button>
+          </div>
+          <div class="card-summary">
+            <p class="card-summary__time">
+              <span class="visually-hidden">Current:</span> 5hrs
+            </p>
+            <p class="card-summary__comparison">Last Week - 7hrs</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </body>
+</html>

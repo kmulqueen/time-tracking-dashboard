@@ -1,0 +1,59 @@
+:root {
+  --clr-white: hsl(0, 100%, 100%);
+  --clr-grey-200: hsl(0, 0%, 85%);
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-navy-200: hsl(236, 100%, 87%);
+  --clr-navy-800: hsl(235, 41%, 34%);
+  --clr-navy-900: hsl(235, 46%, 20%);
+  --clr-navy-950: hsl(226, 43%, 10%);
+  --clr-orange-300: hsl(15, 100%, 70%);
+  --clr-purple-500: hsl(235, 45%, 61%);
+  --clr-purple-600: hsl(246, 80%, 60%);
+  --clr-purple-700: hsl(264, 64%, 52%);
+  --clr-blue-300: hsl(195, 74%, 62%);
+  --clr-pink-400: hsl(348, 100%, 68%);
+  --clr-green-400: hsl(145, 58%, 55%);
+  --clr-yellow-300: hsl(43, 84%, 65%);
+
+  --fs-600: 3.5rem;
+  --fs-500: 2.5rem;
+  --fs-400: 2rem;
+  --fs-300: 1.5rem;
+  --fs-200: 1.125rem;
+  --fs-100: 0.9375rem;
+
+  --lh-600: 2.9375rem;
+  --lh-500: 2.375rem;
+  --lh-400: 1.75rem;
+  --lh-300: 1.3125rem;
+  --lh-200: 1.125rem;
+
+  --spc-500: 2.5rem;
+  --spc-400: 2rem;
+  --spc-300: 1.5rem;
+  --spc-200: 1rem;
+  --spc-100: 0.5rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
