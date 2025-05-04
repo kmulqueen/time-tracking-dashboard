@@ -52,6 +52,8 @@ html {
 
 main {
   padding: 5rem var(--spc-300);
+  display: grid;
+  gap: calc(var(--lh-500) + var(--spc-300));
 }
 
 body {
@@ -139,9 +141,80 @@ body {
   outline: none;
 }
 
+.activities-grid {
+  display: grid;
+  gap: calc(var(--lh-500) + var(--spc-300));
+}
+
+.card {
+  background-color: var(--clr-navy-900);
+  border-radius: var(--spc-200);
+  padding: var(--spc-300);
+  box-shadow: aliceblue 0px calc(-1 * var(--lh-500));
+}
+
+.card-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-type__heading {
+  font-weight: 500;
+  font-size: var(--fs-200);
+  line-height: var(--lh-300);
+}
+
+.card-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+}
+
+.card-button:focus-visible {
+  outline: solid 3px var(--clr-purple-600);
+}
+
+.card-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.card-summary__time {
+  font-size: var(--fs-400);
+  font-weight: 300;
+  line-height: var(--lh-500);
+}
+
+.card-summary__comparison {
+  color: var(--clr-navy-200);
+}
+
+.card--work {
+  box-shadow: var(--clr-orange-300) 0px calc(-1 * var(--lh-500));
+}
+.card--play {
+  box-shadow: var(--clr-blue-300) 0px calc(-1 * var(--lh-500));
+}
+.card--study {
+  box-shadow: var(--clr-pink-400) 0px calc(-1 * var(--lh-500));
+}
+.card--exercise {
+  box-shadow: var(--clr-green-400) 0px calc(-1 * var(--lh-500));
+}
+.card--social {
+  box-shadow: var(--clr-purple-700) 0px calc(-1 * var(--lh-500));
+}
+.card--self-care {
+  box-shadow: var(--clr-yellow-300) 0px calc(-1 * var(--lh-500));
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding-bottom: var(--spc-300);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
