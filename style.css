@@ -175,6 +175,7 @@ body {
 .card-type {
   display: flex;
   justify-content: space-between;
+  margin-bottom: var(--spc-100);
 }
 
 .card-type__heading {
@@ -296,4 +297,38 @@ body {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+@media (min-width: 768px) {
+  main {
+    place-content: center;
+    height: calc(100vh - 5rem);
+  }
+
+  .time-filter__label {
+    padding: var(--spc-300) var(--spc-500);
+  }
+
+  .activities-grid {
+    grid: repeat(2, 1fr) / repeat(3, 1fr);
+    column-gap: var(--spc-300);
+  }
+
+  .card-type {
+    margin-bottom: var(--spc-200);
+  }
+
+  .time-filter__options {
+    justify-content: center;
+  }
+  .card-summary {
+    flex-direction: column;
+    row-gap: var(--spc-200);
+  }
+  .card-summary__time {
+    font-size: var(--fs-600);
+  }
+  .card-summary__comparison {
+    font-size: var(--fs-100);
+  }
 }
