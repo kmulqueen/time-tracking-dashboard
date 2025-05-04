@@ -150,7 +150,26 @@ body {
   background-color: var(--clr-navy-900);
   border-radius: var(--spc-200);
   padding: var(--spc-300);
-  box-shadow: aliceblue 0px calc(-1 * var(--lh-500));
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: calc(-1 * var(--lh-500) - 1rem);
+  right: var(--spc-300);
+  /* Clip the icon at both top and bottom edges of the shadow - some icons need specific adjustment */
+  clip-path: polygon(
+    0 1rem,
+    100% 1rem,
+    100% calc(var(--lh-500) + 1rem),
+    0 calc(var(--lh-500) + 1rem)
+  );
 }
 
 .card-type {
@@ -195,20 +214,67 @@ body {
 .card--work {
   box-shadow: var(--clr-orange-300) 0px calc(-1 * var(--lh-500));
 }
+.card--work::before {
+  background-image: url("./images/icon-work.svg");
+}
+
 .card--play {
   box-shadow: var(--clr-blue-300) 0px calc(-1 * var(--lh-500));
 }
+.card--play::before {
+  background-image: url("./images/icon-play.svg");
+}
+
 .card--study {
   box-shadow: var(--clr-pink-400) 0px calc(-1 * var(--lh-500));
 }
+.card--study::before {
+  background-image: url("./images/icon-study.svg");
+}
+
 .card--exercise {
   box-shadow: var(--clr-green-400) 0px calc(-1 * var(--lh-500));
 }
+.card--exercise::before {
+  background-image: url("./images/icon-exercise.svg");
+  top: calc(-1 * var(--lh-500) - 0.15rem);
+  clip-path: polygon(
+    0 0.15rem,
+    100% 0.15rem,
+    100% calc(var(--lh-500) + 0.125rem),
+    0 calc(var(--lh-500) + 0.125rem)
+  );
+}
+
 .card--social {
   box-shadow: var(--clr-purple-700) 0px calc(-1 * var(--lh-500));
 }
+.card--social::before {
+  background-image: url("./images/icon-social.svg");
+  top: calc(-1 * 3.125rem);
+  right: var(--spc-100);
+  clip-path: polygon(
+    0 0.75rem,
+    100% 0.75rem,
+    100% calc(var(--lh-500) + 0.75rem),
+    0 calc(var(--lh-500) + 0.75rem)
+  );
+}
+
 .card--self-care {
   box-shadow: var(--clr-yellow-300) 0px calc(-1 * var(--lh-500));
+}
+.card--self-care::before {
+  background-image: url("./images/icon-self-care.svg");
+  height: 4rem;
+  width: 4rem;
+  top: calc(-1 * 3.125rem);
+  clip-path: polygon(
+    0 0.75rem,
+    100% 0.75rem,
+    100% calc(var(--lh-500) + 0.75rem),
+    0 calc(var(--lh-500) + 0.75rem)
+  );
 }
 
 .attribution {
