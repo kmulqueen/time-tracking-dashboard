@@ -192,6 +192,12 @@ body {
   place-content: center;
 }
 
+.card-button:active > svg path,
+.card-button:focus > svg path,
+.card-button:focus-visible > svg path {
+  fill: var(--clr-white);
+}
+
 .card-button:focus-visible {
   outline: solid 3px var(--clr-purple-600);
 }
@@ -284,7 +290,7 @@ body {
   padding-bottom: var(--spc-300);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--clr-blue-300);
 }
 
 .visually-hidden {
@@ -389,6 +395,10 @@ body {
   .card {
     align-self: end;
     height: calc(100% - var(--lh-500));
+  }
+
+  .card:hover {
+    background-color: var(--clr-navy-800);
   }
 
   .card-summary {
